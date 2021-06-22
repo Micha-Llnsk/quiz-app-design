@@ -1,1 +1,33 @@
 @import '_base.css';
+
+.outerspace {
+    display: grid;
+    grid-template-rows: 100px auto 100px;
+    border: 1px solid black;
+}
+
+.navbar {
+    background-color: chocolate;
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 8px;
+    gap: 8px;
+}
+
+.quests {
+    background-color: darkolivegreen;
+    border: 1px solid red;
+}
+
+.footbar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: darkgreen;
+}
