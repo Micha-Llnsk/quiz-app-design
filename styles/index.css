@@ -1,33 +1,68 @@
-@import '_base.css';
+@import "_base.css";
 
 .outerspace {
     display: grid;
-    grid-template-rows: 100px auto 100px;
-    border: 1px solid black;
+    grid-template-rows: 10vh auto 10vh;
+    background-color: #DBE4EE;
 }
 
 .navbar {
-    background-color: chocolate;
+    background-color: #37393A;
     display: flex;
+    justify-content: space-between;
+    align-content: center;
     align-items: center;
-    padding: 0 1em;
+    padding: 1rem;
+}
+
+h1 {
+    border-radius: 8px;
+    background-color: #77B6EA;
+    padding: 0.5rem 1rem;
+}
+
+i {
+    border-radius: 8px;
+    background-color: #77B6EA;
+    padding: 0.5rem 1rem; 
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    margin: 10px;
-    padding: 8px;
-    gap: 8px;
+    gap: 2vh 2vw;
+    margin: 2vh 5vw;
 }
 
 .quests {
-    background-color: darkolivegreen;
-    border: 1px solid red;
+    background-color: #E3B5A4;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 8px;
 }
 
-.footbar {
+.answers {
+    background-color: #3E7CB1;
+    padding: 0.5rem;
+    border-radius: 8px;
+    letter-spacing: 0.1rem;
+
+}
+
+.feet {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    background-color: darkgreen;
+    background-color: #37393A;
+}
+
+.btn {
+    border-radius: 8px;
+    background-color: #77B6EA;
+    padding: 0.4rem 0.6rem;
+    margin: 1vh 1vw;
+    cursor: pointer;
+  }
+
+.btn:hover {
+    background-color: #F17300;
 }
