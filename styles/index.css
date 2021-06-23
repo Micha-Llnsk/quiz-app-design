@@ -3,11 +3,12 @@
 .outerspace {
     display: grid;
     grid-template-rows: 10vh auto 10vh;
-    background-color: #DBE4EE;
+    background-color: #a7b8cc;
+    height: 100vh;
 }
 
 .navbar {
-    background-color: #37393A;
+    background-color: #37393a;
     display: flex;
     justify-content: space-between;
     align-content: center;
