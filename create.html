@@ -12,31 +12,38 @@
     </header>
     <main>
       <form class="content">
-        <label for="addquest">Add your Questions</label>
-        <input
+        <label class="create_label" for="addquest">Ask your Question?</label>
+        <textarea
+          class="create_area"
           type="text"
           name="addquest"
           id="addquest"
-          placeholder="Ask your tricky Questions here!"
-        />
+          rows="10"
+          placeholder="Questions are best asked here !!"
+        ></textarea>
 
-        <label for="addanswer">Type your Answer here !!</label>
-        <input
+        <label class="create_label" for="addanswer"
+          >Give the right answer!</label
+        >
+        <textarea
+          class="create_area"
           type="text"
           name="addanswer"
           id="addanswer"
+          rows="10"
           placeholder="Add your clever answer here!"
-        />
+        ></textarea>
 
-        <label for="addtags">Give us some Tags! ..plz?</label>
-        <input
+        <label class="create_label" for="addtags">Add some Tags #</label>
+        <textarea
+          class="create_area"
           type="text"
           name="addtags"
           id="addtags"
-          placeholder="We need more Tags to survive, feed us plz!"
-        />
+          placeholder="#geo, #math, #history, ..."
+        ></textarea>
 
-        <button class="btn" type="submit">Click me to feel better</button>
+        <button class="create_btn" type="submit">Submit a question</button>
       </form>
     </main>
 
@@ -50,7 +57,7 @@
       </a>
       <a class="btn" href="bookmark.html">
         <img class="tool-icon" src="icons/toolbar_book.png" alt="" />
-        > Bookmark</a
+        Bookmark</a
       >
       <a class="btn" href="profile.html">
         <img class="tool-icon" src="icons/resume.png" alt="" /> Profile
