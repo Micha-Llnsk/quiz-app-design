@@ -1,4 +1,5 @@
 @import "_base.css";
+@import "_color.css";
 
 .outerspace {
   display: grid;
@@ -51,7 +52,7 @@ h1 {
   background-color: black;
 }
 
-.planets img {
+.planets .bookmark {
   height: 30px;
 }
 
@@ -86,6 +87,7 @@ li {
   padding: 0.4rem 0.6rem;
   margin: 1vh 1vw;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .btn:hover {
@@ -115,4 +117,9 @@ li {
 
 .create_btn:active {
   background-color: rgb(97, 13, 97);
+}
+
+.planets img {
+  border-radius: 10px;
+  height: 200px;
 }
