@@ -1,5 +1,5 @@
 const themeButton = document.querySelector(".theme_btn");
-const bodyElement = document.querySelector(".body");
+const bodyElement = document.querySelector(".outerspace");
 
 themeButton.addEventListener("click", () => {
   if (themeButton.textContent === "Dark-Mode") {
