@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz-App-Design</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body class="outerspace blue_theme">
+    <header class="navbar">
+      <h1>Space Create</h1>
+    </header>
+    <main>
+      <form class="content user__question">
+        <label class="create_label" for="addquest">Ask your Question?</label>
+        <textarea
+          class="create_area"
+          type="text"
+          name="addquest"
+          id="addquest"
+          rows="10"
+          placeholder="Questions are best asked here !!"
+        ></textarea>
+
+        <label class="create_label" for="addanswer"
+          >Give the right answer!</label
+        >
+        <textarea
+          class="create_area"
+          type="text"
+          name="addanswer"
+          id="addanswer"
+          rows="10"
+          placeholder="Add your clever answer here!"
+        ></textarea>
+
+        <label class="create_label" for="addtags">Add some Tags #</label>
+        <textarea
+          class="create_area"
+          type="text"
+          name="addtags"
+          id="addtags"
+          placeholder="#geo, #math, #history, ..."
+        ></textarea>
+
+        <button class="create_btn" type="submit">Submit a question</button>
+      </form>
+    </main>
+
+    <footer class="feet">
+      <a class="btn" href="index.html">
+        <img class="tool-icon" src="icons/home.png" alt="" />
+        Home</a
+      >
+      <a class="btn" href="#">
+        <img class="tool-icon" src="icons/edit-tools.png" alt="" /> Create
+      </a>
+      <a class="btn" href="bookmark.html">
+        <img class="tool-icon" src="icons/toolbar_book.png" alt="" />
+        Bookmark</a
+      >
+      <a class="btn" href="profile.html">
+        <img class="tool-icon" src="icons/resume.png" alt="" /> Profile
+      </a>
+    </footer>
+    <script src="/_create.js"></script>
+  </body>
+</html>

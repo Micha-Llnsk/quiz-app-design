@@ -1,0 +1,19 @@
+.blue_theme {
+  --navtop--color: #37393a;
+  --background--color: #c0cfe0;
+  --header--color: #77b6ea;
+  --cards--color: #3e7cb1;
+  --navbot--color: #37393a;
+  --btn--color: #77b6ea;
+  --create--btn--color: #142a3b;
+}
+
+.rainbow_theme {
+  --navtop--color: #104e57;
+  --background--color: #010d1a;
+  --header--color: #808070;
+  --cards--color: #671d75;
+  --navbot--color: #17596d;
+  --btn--color: #e19de4;
+  --create--btn--color: #ffffff;
+}

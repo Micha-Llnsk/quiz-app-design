@@ -1,104 +1,125 @@
 @import "_base.css";
+@import "_color.css";
 
 .outerspace {
-    display: grid;
-    grid-template-rows: 10vh auto 10vh;
-    background-color: #c0cfe0;
-    height: 100vh;
+  display: grid;
+  grid-template-rows: 10vh auto 10vh;
+  background-color: var(--background--color);
+  height: 100vh;
 }
 
 .navbar {
-    background-color: #37393a;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    padding: 1rem;
+  background-color: var(--navtop--color);
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
 h1 {
-    border-radius: 8px;
-    background-color: #77B6EA;
-    padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: var(--header--color);
+  padding: 0.5rem 1rem;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    gap: 2vh 2vw;
-    margin: 2vh 5vw;
-    overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh 2vw;
+  margin: 2vh 5vw;
+  overflow-y: scroll;
 }
 
 .planets {
-    background-color: #3E7CB1;
-    text-align: center;
-    margin: 1rem;
-    padding: 0.5rem;
-    border-radius: 8px;
-    position: relative;
-}
-
-.book {
-    position: absolute;
-    right: 2%;
-    top: -10%;
-}
-
-.book img {
-    height: 30px;
-}
-
-/**
+  background-color: var(--cards--color);
+  text-align: center;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 8px;
   position: relative;
-  top: -30%;
-  right: -50%;
-  font-size: 2.5rem;
-
-  position: absolute;
-  top: -15px;
-  right: 15px;
-  font-size: 2.5rem;
 }
-**/
+
+.bookmark {
+  position: absolute;
+  right: 2%;
+  top: -10%;
+  height: 30px;
+  cursor: pointer;
+}
+
+.blackmark {
+  background-color: black;
+}
+
+.planets .bookmark {
+  height: 30px;
+}
 
 .topics {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .card-btn {
-    margin: 1rem 5rem;
+  margin: 1rem 5rem;
+  cursor: pointer;
 }
 
 .answers ul {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 .feet {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    background-color: #37393A;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: var(--navbot--color);
 }
 
 .btn {
-    border-radius: 8px;
-    background-color: #77B6EA;
-    padding: 0.4rem 0.6rem;
-    margin: 1vh 1vw;
-    cursor: pointer;
-  }
+  border-radius: 8px;
+  background-color: var(--btn--color);
+  padding: 0.4rem 0.6rem;
+  margin: 1vh 1vw;
+  cursor: pointer;
+  text-decoration: none;
+}
 
-.btn:hover {
-    background-color: tomato;
+.btn:active {
+  background-color: tomato;
+}
+
+.hidden {
+  visibility: hidden;
+  display: none;
 }
 
 .tool-icon {
-    height: 30px;
-    width: auto;
+  height: 30px;
+  width: auto;
+}
+
+.create_btn {
+  display: inline-block;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--create--btn--color);
+  color: white;
+  padding: 0.4rem 0.6rem;
+  margin: 1vh 1vw;
+  cursor: pointer;
+}
+
+.create_btn:active {
+  background-color: rgb(97, 13, 97);
+}
+
+.planets img {
+  border-radius: 10px;
+  height: 200px;
 }
