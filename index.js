@@ -1,24 +1,15 @@
-const btnCard = document.querySelectorAll(".card-btn");
-const answer = document.querySelectorAll(".answers");
+import { createCardComponent } from "./lib/card.js";
+import { data } from "./lib/db.js";
 
-for (let i = 0; i < btnCard.length; i++) {
-  const currentBtn = btnCard[i];
-  const currentAnswer = answer[i];
-  currentBtn.addEventListener("click", () => {
-    currentAnswer.classList.toggle("hidden");
-    if (currentBtn.textContent === "Show Answer") {
-      currentBtn.textContent = "Hide Answer";
-    } else {
-      currentBtn.textContent = "Show Answer";
-    }
-  });
-}
+// Render cards coming from data
+const cardComponents = [];
+data.forEach((cardData) => {
+  const component = createCardComponent(cardData);
+  cardComponents.push(component);
+});
 
-const listOfMarks = document.querySelectorAll(".bookmark");
-
-for (let i = 0; i < listOfMarks.length; i++) {
-  const currentMark = listOfMarks[i];
-  currentMark.addEventListener("click", () => {
-    currentMark.classList.toggle("blackmark");
-  });
-}
+// Append them to the content element
+const contentClass = document.querySelector(".content");
+cardComponents.forEach((component) => {
+  contentClass.append(component);
+});
